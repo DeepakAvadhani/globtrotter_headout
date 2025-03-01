@@ -5,9 +5,9 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// const destinationRoutes = require('./routes/destinationRoutes');
-// const userRoutes = require('./routes/userRoutes');
-// const challengeRoutes = require('./routes/challengeRoutes');
+const destinationRoutes = require('./routes/destinationRoutes');
+const userRoutes = require('./routes/userRoutes');
+const challengeRoutes = require('./routes/challengeRoutes');
 
 const app = express();
 
@@ -18,9 +18,9 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB', err));
 
-// app.use('/api/destinations', destinationRoutes);
-// app.use('/api/users', userRoutes);
-// app.use('/api/challenges', challengeRoutes);
+app.use('/api/destinations', destinationRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/challenges', challengeRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -31,5 +31,9 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the globtrotter game");
+  });
 
 module.exports = app;

@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Destination = require('../models/Destination');
+const Destination = require('../models/Destinations');
 
-// Get a random destination with clues only
 router.get('/random', async (req, res) => {
   try {
     const count = await Destination.countDocuments();
@@ -10,10 +9,9 @@ router.get('/random', async (req, res) => {
     
     const destination = await Destination.findOne().skip(random);
     
-    // Only send clues initially, not the answer
     res.json({
       id: destination._id,
-      clues: destination.clues.slice(0, 2), // Send only 2 clues
+      clues: destination.clues.slice(0, 2),
       difficulty: destination.difficulty
     });
   } catch (error) {
@@ -21,7 +19,6 @@ router.get('/random', async (req, res) => {
   }
 });
 
-// Verify answer and get full destination info
 router.post('/verify/:id', async (req, res) => {
   try {
     const { answer } = req.body;
@@ -33,7 +30,6 @@ router.post('/verify/:id', async (req, res) => {
     
     const isCorrect = destination.name.toLowerCase() === answer.toLowerCase();
     
-    // If answer is correct or wrong, reveal the destination
     res.json({
       isCorrect,
       destination: {
@@ -41,7 +37,6 @@ router.post('/verify/:id', async (req, res) => {
         country: destination.country,
         continent: destination.continent,
         funFact: destination.funFacts[Math.floor(Math.random() * destination.funFacts.length)],
-        // Only reveal all details if answer is correct
         ...(isCorrect && {
           clues: destination.clues,
           funFacts: destination.funFacts,
@@ -63,7 +58,6 @@ router.get('/options/:id', async (req, res) => {
       return res.status(404).json({ message: 'Destination not found' });
     }
     
-    // Get 3 random incorrect options
     const wrongOptions = await Destination.aggregate([
       { $match: { _id: { $ne: mongoose.Types.ObjectId(req.params.id) } } },
       { $sample: { size: 3 } },
