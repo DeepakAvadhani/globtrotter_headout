@@ -15,8 +15,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
-mongoose.connect(process.env.MONGODB_URI)
+const password = process.env.PASSWORD;
+mongoose.connect(`mongodb+srv://deepakavadhani2:${password}@cluster0.sfp21.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB', err));
 
