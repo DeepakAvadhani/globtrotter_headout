@@ -2,7 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 dotenv.config();
 
 const destinationRoutes = require('./routes/destinationRoutes');
