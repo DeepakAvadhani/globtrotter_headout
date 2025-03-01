@@ -25,8 +25,11 @@ async function generateDestinationData(destination) {
     `;
 
     const response = await openai.chat.completions.create({
-      model: "gpt-4",
-      messages: [{ role: "user", content: prompt }],
+        model: "gpt-o1",
+        store: true,
+        messages: [
+            {"role": "user", "content": prompt}
+        ]
     });
 
     const content = response.choices[0].message.content;

@@ -15,6 +15,7 @@
         "Paris was originally a Roman city called Lutetia."
       ]
     },
+
     {
       "city": "Tokyo",
       "country": "Japan",
@@ -31,6 +32,7 @@
         "Tokyo’s subway system is so efficient that train delays of just a few minutes come with formal apologies."
       ]
     },
+
     {
       "city": "New York",
       "country": "USA",
@@ -46,5 +48,141 @@
         "New York City has 468 subway stations, making it one of the most complex transit systems in the world.",
         "The Empire State Building has its own zip code: 10118."
       ]
-    }
+    },
+
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "clues": [
+        "This city has a clock tower that people often mistake as being called Big Ben.",
+        "The River Thames runs through the heart of this historic capital."
+      ],
+      "fun_fact": [
+        "Big Ben is actually the name of the bell inside the Elizabeth Tower, not the tower itself!",
+        "London has more than 170 museums, including the British Museum, which has over 8 million objects."
+      ],
+      "trivia": [
+        "Black cabs in London require drivers to pass 'The Knowledge,' one of the toughest taxi exams in the world.",
+        "London was the first city in the world to have an underground railway, known as the Tube."
+      ]
+    },
+
+    {
+      "city": "Rome",
+      "country": "Italy",
+      "clues": [
+        "This city is home to the Colosseum, an ancient amphitheater.",
+        "It has a country within its borders—the smallest in the world!"
+      ],
+      "fun_fact": [
+        "Vatican City, the smallest country in the world, is located entirely within Rome.",
+        "There’s a keyhole in Rome where you can see three countries at once: Italy, Vatican City, and Malta."
+      ],
+      "trivia": [
+        "Romans invented concrete, revolutionizing architecture.",
+        "The Pantheon’s dome is still the largest unreinforced concrete dome in the world."
+      ]
+    },
+
+    {
+      "city": "Sydney",
+      "country": "Australia",
+      "clues": [
+        "This city is famous for its Opera House with a sail-like design.",
+        "A giant bridge nicknamed 'The Coathanger' spans its harbor."
+      ],
+      "fun_fact": [
+        "The Sydney Opera House took 14 years to build and was initially expected to take only 4.",
+        "Sydney has over 100 beaches, including the world-famous Bondi Beach."
+      ],
+      "trivia": [
+        "Sydney’s Harbour Bridge is the largest steel arch bridge in the world.",
+        "The city was founded as a British penal colony in 1788."
+      ]
+    },
+
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "clues": [
+        "A giant statue of Christ overlooks this vibrant city.",
+        "Home to one of the most famous carnival celebrations in the world."
+      ],
+      "fun_fact": [
+        "The Christ the Redeemer statue was struck by lightning in 2014, causing minor damage to one of its fingers.",
+        "Rio's Copacabana Beach hosts one of the largest New Year's Eve parties in the world."
+      ],
+      "trivia": [
+        "The name 'Rio de Janeiro' means 'River of January' in Portuguese, even though there is no river.",
+        "Sugarloaf Mountain offers breathtaking views of the city and the Atlantic Ocean."
+      ]
+    },
+    {
+        "city": "Cairo",
+        "country": "Egypt",
+        "clues": [
+          "Overlooks the ancient Pyramids of Giza and the Great Sphinx.",
+          "The Nile River, the longest in the world, flows through this city."
+        ],
+        "fun_fact": [
+          "Cairo's 'City of the Dead' is a 4-mile-long cemetery where people live among tombs.",
+          "The Great Pyramid was the tallest human-made structure for 3,800 years."
+        ],
+        "trivia": [
+          "Cairo is nicknamed 'The City of a Thousand Minarets' for its Islamic architecture.",
+          "The first recorded labor strike in history occurred here during Pharaoh Ramses III’s reign."
+        ]
+      },
+      
+      {
+        "city": "Tokyo",
+        "country": "Japan",
+        "clues": [
+          "Famous for Shibuya Crossing, the world's busiest pedestrian intersection.",
+          "The Tokyo Skytree is the tallest freestanding broadcasting tower globally."
+        ],
+        "fun_fact": [
+          "Tokyo has over 14 Michelin three-star restaurants—more than any other city.",
+          "Vending machines here sell everything from hot ramen to umbrellas."
+        ],
+        "trivia": [
+          "Tokyo was named Edo until 1868 and means 'Eastern Capital' in Japanese.",
+          "The city’s subway system has women-only cars during rush hour for safety."
+        ]
+      },
+      
+      {
+        "city": "Cape Town",
+        "country": "South Africa",
+        "clues": [
+          "Nestled beneath Table Mountain, a flat-topped natural wonder.",
+          "Located near the Cape of Good Hope, a historic maritime route."
+        ],
+        "fun_fact": [
+          "The Noon Gun, fired daily since 1806, uses one of the oldest cannons in continuous use.",
+          "Boulders Beach is home to a colony of endangered African penguins."
+        ],
+        "trivia": [
+          "Cape Town’s Kirstenbosch Garden is part of a UNESCO World Heritage Site.",
+          "The city hosted Africa’s first FIFA World Cup match in 2010."
+        ]
+      },
+      
+      {
+        "city": "Sydney",
+        "country": "Australia",
+        "clues": [
+          "Famous for its sail-shaped Sydney Opera House and Harbour Bridge.",
+          "Bondi Beach, a iconic surfing spot, lies within the city."
+        ],
+        "fun_fact": [
+          "The Sydney Opera House roof contains over 1 million self-cleaning tiles.",
+          "Sydney’s New Year’s Eve fireworks are among the first to welcome the new year globally."
+        ],
+        "trivia": [
+          "Sydney was named after British Home Secretary Lord Sydney in 1788.",
+          "The Sydney to Hobart Yacht Race is one of the world’s toughest ocean races."
+        ]
+      }
   ]
+  
