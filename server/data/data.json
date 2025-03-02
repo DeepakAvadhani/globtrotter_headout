@@ -183,6 +183,107 @@
           "Sydney was named after British Home Secretary Lord Sydney in 1788.",
           "The Sydney to Hobart Yacht Race is one of the world’s toughest ocean races."
         ]
+      },
+      {
+        "city": "New York City",
+        "country": "United States",
+        "clues": [
+          "The Statue of Liberty stands in its harbor as a symbol of freedom.",
+          "Times Square here hosts the iconic New Year's Eve ball drop."
+        ],
+        "fun_fact": [
+          "Central Park has a secret underground vault that stores antique carousel parts.",
+          "The NYC subway system ran 24/7 even during the construction of the Panama Canal."
+        ],
+        "trivia": [
+          "New York City was briefly the U.S. capital from 1789 to 1790.",
+          "The city’s library lions, Patience and Fortitude, are named after virtues from the Great Depression."
+        ]
+      },
+      
+      {
+        "city": "Rome",
+        "country": "Italy",
+        "clues": [
+          "Home to the Colosseum, an ancient amphitheater that hosted gladiatorial contests.",
+          "The Vatican City, the smallest independent state, lies within this city."
+        ],
+        "fun_fact": [
+          "Romans throw coins into the Trevi Fountain daily—€3,000+ is donated to charity yearly.",
+          "The city has a cat sanctuary at Largo di Torre Argentina, where Julius Caesar was assassinated."
+        ],
+        "trivia": [
+          "Rome’s Pantheon has a hole in its dome that creates a 'rain column' effect during storms.",
+          "The Spanish Steps were funded by French diplomat Étienne Gueffier in the 18th century."
+        ]
+      },
+      
+      {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "clues": [
+          "Known for ornate temples like Wat Arun and the Grand Palace.",
+          "Floating markets and street food stalls dominate its canals and streets."
+        ],
+        "fun_fact": [
+          "Bangkok’s full ceremonial name is 163 letters long (Guinness World Record).",
+          "The city’s Suvarnabhumi Airport has a rooftop Muay Thai boxing ring."
+        ],
+        "trivia": [
+          "Bangkok translates to 'City of Angels' in Thai.",
+          "The world’s largest solid gold Buddha statue (5.5 tons) resides at Wat Traimit."
+        ]
+      },
+      
+      {
+        "city": "Dubai",
+        "country": "United Arab Emirates",
+        "clues": [
+          "Home to the Burj Khalifa, the tallest building in the world.",
+          "Features artificial islands shaped like palm trees and a world map."
+        ],
+        "fun_fact": [
+          "Dubai Police patrol in Lamborghinis, Ferraris, and a $1.6 million Aston Martin.",
+          "The city has an indoor ski slope in the Mall of the Emirates—despite desert heat."
+        ],
+        "trivia": [
+          "Dubai’s gold trade accounts for 25% of global physical gold transactions.",
+          "The Dubai Fountain shoots water 500 feet high (equivalent to a 50-story building)."
+        ]
+      },
+      
+      {
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "clues": [
+          "Known as the 'Paris of South America' for its European-style architecture.",
+          "Birthplace of the tango dance and home to colorful La Boca neighborhood."
+        ],
+        "fun_fact": [
+          "The city’s Teatro Colón has a secret room designed for perfect acoustics: the “Sala de los escamoteos.”",
+          "Buenos Aires has more bookstores per capita than any other city globally."
+        ],
+        "trivia": [
+          "The name means 'Good Airs' in Spanish, referencing its founding during fair weather.",
+          "The Obelisco monument was built in just 31 days for the city’s 400th anniversary."
+        ]
+      },
+      
+      {
+        "city": "Venice",
+        "country": "Italy",
+        "clues": [
+          "Built on 118 small islands connected by canals and bridges.",
+          "Hosts the annual Carnival of Venice with elaborate masks and costumes."
+        ],
+        "fun_fact": [
+          "Venice’s canals glow bioluminescent blue at night during algae blooms.",
+          "Residents navigate the city using gondolas, traghetti ferries, and water taxis."
+        ],
+        "trivia": [
+          "The Rialto Bridge was the only way to cross the Grand Canal on foot until 1854.",
+          "Venice’s St. Mark’s Basilica houses looted treasures from the Sack of Constantinople."
+        ]
       }
   ]
   

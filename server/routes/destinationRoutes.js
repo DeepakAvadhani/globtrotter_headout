@@ -29,7 +29,7 @@ router.post('/verify/:id', async (req, res) => {
       return res.status(404).json({ message: 'Destination not found' });
     }
     
-    const isCorrect = destination.name.toLowerCase() === answer.toLowerCase();
+    const isCorrect = destination.city.toLowerCase() === answer.toLowerCase();
     
     res.json({
       isCorrect,
@@ -37,7 +37,7 @@ router.post('/verify/:id', async (req, res) => {
         name: destination.city,
         country: destination.country,
         continent: destination.continent,
-        funFact: destination.fun_fact[Math.floor(Math.random() * destination.funFacts.length)],
+        funFact: destination.fun_fact[Math.floor(Math.random() * destination.fun_fact.length)],
         ...(isCorrect && {
           clues: destination.clues,
           funFacts: destination.fun_fact,
