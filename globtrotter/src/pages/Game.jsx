@@ -153,7 +153,7 @@ const Game = () => {
                     className="bg-white/20 hover:bg-white/30 rounded-lg p-4 text-left transition"
                     onClick={() => verifyAnswer(option.name)}
                   >
-                    {option.name}
+                    {option.city}
                   </motion.button>
                 ))}
               </div>
