@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const mongoose = require('mongoose');
 const Destination = require('../models/Destinations');
 
 router.get('/random', async (req, res) => {
@@ -59,7 +60,7 @@ router.get('/options/:id', async (req, res) => {
     }
     
     const wrongOptions = await Destination.aggregate([
-      { $match: { _id: { $ne: mongoose.Types.ObjectId(req.params.id) } } },
+      { $match: { _id: { $ne: new mongoose.Types.ObjectId(req.params.id) } } },
       { $sample: { size: 3 } },
       { $project: { name: 1 } }
     ]);

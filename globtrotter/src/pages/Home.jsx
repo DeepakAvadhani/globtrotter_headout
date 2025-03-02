@@ -20,6 +20,7 @@ const Home = () => {
 
     try {
       await createUser(username);
+      console.log(username);
       navigate("/play");
     } catch (error) {
       console.error("Error:", error);

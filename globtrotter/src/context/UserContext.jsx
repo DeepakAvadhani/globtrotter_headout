@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import api from "../services/api";
 
-export const UserContext = createContext();
+const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -19,7 +19,7 @@ export const UserProvider = ({ children }) => {
 
   const createUser = async (username) => {
     try {
-      const response = await api.post("/users", { username });
+      const response = await api.post("/users/", { username });
       const newUser = response.data;
 
       setUser(newUser);
@@ -54,3 +54,5 @@ export const UserProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
+
+export {UserContext};
