@@ -65,6 +65,9 @@ const Game = () => {
       setResult(response.data);
 
       updateScore(response.data.isCorrect);
+      setTimeout(() => {
+        loadDestination();
+      }, 3000);
     } catch (error) {
       console.error("Error verifying answer:", error);
     }
