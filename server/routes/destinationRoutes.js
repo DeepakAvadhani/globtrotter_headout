@@ -34,13 +34,13 @@ router.post('/verify/:id', async (req, res) => {
     res.json({
       isCorrect,
       destination: {
-        name: destination.name,
+        name: destination.city,
         country: destination.country,
         continent: destination.continent,
-        funFact: destination.funFacts[Math.floor(Math.random() * destination.funFacts.length)],
+        funFact: destination.fun_fact[Math.floor(Math.random() * destination.funFacts.length)],
         ...(isCorrect && {
           clues: destination.clues,
-          funFacts: destination.funFacts,
+          funFacts: destination.fun_fact,
           trivia: destination.trivia,
           image: destination.image
         })
@@ -62,7 +62,7 @@ router.get('/options/:id', async (req, res) => {
     const wrongOptions = await Destination.aggregate([
       { $match: { _id: { $ne: new mongoose.Types.ObjectId(req.params.id) } } },
       { $sample: { size: 3 } },
-      { $project: { name: 1 } }
+      { $project: { city: 1 } }
     ]);
     
     const options = [
