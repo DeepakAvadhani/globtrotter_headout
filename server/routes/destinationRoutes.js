@@ -61,7 +61,7 @@ router.get('/options/:id', async (req, res) => {
     
     const wrongOptions = await Destination.aggregate([
       { $match: { _id: { $ne: new mongoose.Types.ObjectId(req.params.id) } } },
-      { $sample: { size: 3 } },
+      { $sample: { size: 4 } },
       { $project: { city: 1 } }
     ]);
     
