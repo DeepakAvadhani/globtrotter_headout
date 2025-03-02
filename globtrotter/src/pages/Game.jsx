@@ -18,12 +18,7 @@ const Game = () => {
   const navigate = useNavigate();
 
   const loadDestination = async () => {
-    setLoading(true);
-    setDestination(null);
-    setOptions([]);
-    setSelectedOption(null);
-    setResult(null);
-
+    
     try {
       const destResponse = await api.get("/destinations/random");
       setDestination(destResponse.data);
@@ -65,12 +60,14 @@ const Game = () => {
       setResult(response.data);
 
       updateScore(response.data.isCorrect);
-      setTimeout(() => {
-        loadDestination();
-      }, 3000);
     } catch (error) {
       console.error("Error verifying answer:", error);
     }
+  };
+
+  const handleNextQuestion = () => {
+    setResult(null);
+    loadDestination();
   };
 
   if (loading) {
@@ -199,7 +196,7 @@ const Game = () => {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="bg-white text-purple-600 font-bold py-3 px-6 rounded-full"
-                      onClick={loadDestination}
+                      onClick={handleNextQuestion}
                     >
                       Next Destination
                     </motion.button>
