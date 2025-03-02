@@ -151,7 +151,7 @@ const Game = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 + index * 0.1 }}
                     className="bg-white/20 hover:bg-white/30 rounded-lg p-4 text-left transition"
-                    onClick={() => verifyAnswer(option.name)}
+                    onClick={() => verifyAnswer(option.city)}
                   >
                     {option.city}
                   </motion.button>
