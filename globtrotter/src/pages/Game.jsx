@@ -75,7 +75,7 @@ const Game = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl min-h-screen flex flex-col">
+    <div className="container mx-auto px-4 py-8 max-w-4xl min-h-screen flex flex-col justify-center items-center">
       <div className="bg-white/10 rounded-xl p-4 mb-6 backdrop-blur-sm">
         <div className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">🧩 Globetrotter</h1>
