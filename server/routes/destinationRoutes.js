@@ -66,7 +66,7 @@ router.get('/options/:id', async (req, res) => {
     ]);
     
     const options = [
-      { name: correctDestination.name },
+      { name: correctDestination.city },
       ...wrongOptions
     ].sort(() => Math.random() - 0.5);
     
